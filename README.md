@@ -1,5 +1,6 @@
-# vault
-
+# Vault
+ This is the frontend that must be used in combination with the vault-server as a backend
+ 
 ## Project setup
 ```
 npm install
