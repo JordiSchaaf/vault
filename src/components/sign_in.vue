@@ -22,7 +22,7 @@
           <b-input v-model="passwordRepeat" type="password"/>
         </b-field>
         <div class="placeholder-login-button">
-          <b-button native-type="submit" type="is-success">Login</b-button>
+          <b-button native-type="submit" type="is-primary" outlined rounded>Login</b-button>
         </div>
         <!-- <b-button @click="signup" class="is-info">
           Sign up
@@ -87,7 +87,7 @@ export default {
   // border: 2px solid #4F772D;
   border-radius: .75rem;
   padding: 1.5rem;
-  background-color: $blue-dark;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   justify-content: center;

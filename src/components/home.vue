@@ -18,11 +18,11 @@ export default {
   name: 'Home',
   data () {
     return {
-      users: null
+      users: ''
     }
   },
   async mounted () {
-    this.users = await VaSe.get('/')
+    this.users = await VaSe.get('/user/')
   }
 }
 </script>

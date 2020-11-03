@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <navbar v-if="loggedIn"/>
-    <router-view/>
+    <div class="container">
+      <navbar v-if="loggedIn"/>
+      <router-view/>
+    </div>
   </div>
 </template>
 <script>
@@ -24,13 +26,13 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  text-align: left;
+  color: $text;
   height: 100%;
+  padding: 1.5rem;
 }
 html, body {
   height: 100% !important;
-  // background: url('./assets/bg-noise.png') repeat fixed 0 0;
   background-color: #ffffff;
 }
 body {

@@ -3,23 +3,37 @@
 @import "~bulma/sass/utilities/_all";
 @import "general_variables";
 
+// Resetting Bulma variables
+$body-color: $text;
+
 $colors: (
   "white": ($white, $black),
   "black": ($black, $white),
   "light": ($light, $light-invert),
   "dark": ($dark, $dark-invert),
-  "primary": ($main, $primary-invert),
+  "primary": ($main, $white),
   "info": ($info, $info-invert),
   "success": ($success, $success-invert),
   "warning": ($warning, $warning-invert),
   "danger": ($danger, $danger-invert),
-  "blue-dark": ($blue-dark, $dark-invert)
+  "grey": ($grey-lighter, $grey-lighter)
 );
 
 // Links
-$link: $blue-grey;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
+$link: $main;
+$link-invert: $white;
+$link-focus-border: $white;
+
+// Menu
+.menu-list {
+  text-align: left;
+}
+.menu-list a.is-active {
+  background-color: rgba($color: #000000, $alpha: 0.05) !important;
+  border-left: 2px solid $main;
+  color: $text !important;
+  font-weight: 700;
+}
 
 // Import Bulma and Buefy styles
 @import "~bulma";

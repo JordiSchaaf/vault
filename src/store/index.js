@@ -8,6 +8,7 @@ import actions from './actions'
 Vue.use(Vuex)
 
 const state = {
+  currentUser: {},
   loggedIn: false
 }
 
